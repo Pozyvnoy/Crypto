@@ -8,10 +8,7 @@ nav{
     z-index: 999;
     border-bottom: 2px solid rgba(255, 255, 255, 0.4);
 }
-nav:after {
 
- 
-}
 .nav_img{
     padding-left: 20px;
     width: 10%;

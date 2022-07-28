@@ -5,37 +5,47 @@ import CryptoItem from './CryptoItem';
 
 
 
+
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {  };
+    this.state = {  
+      items:[]
+ };
   }
-  getData(){
-    let url = 'sandbox-api.coinmarketcap.com'
-    let params = {
-      
-      headers:{
-        'X-CMC_PRO_API_KEY': '54bcf4d-1bca-4e8e-9a24-22ff2c3d462c',  
-          
-      }
-        
-      }
-    fetch(url,params)
+
+componentDidMount(){
+  let url = "/api/?get=rates&pairs=USDRUB,EURGBP,GBPRUB,EURJPY,EURRUB&key=bbd1ebae971bc122315c8ba93362750f"
+  const params = {
+    method: 'GET',
+    headers: {
+      // "Access-Control-Allow-Origin": "*",
+      // "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept",
+    
+    }
+  };
+  fetch(url, params)
     .then(response => response.json())
-    .then(response => console.log(response))
-  }
-  componentDidMount (){
-    this.getData()
-  }
+    .then(
+      result =>{
+        this.setState({items:Object.entries(result.data)})
+
+      })
+
+}
+
+       
+
 
   render() {
     return (
       <div className="myNodeFirstApp">
           <Nav/>
-          <CryptoItem/>
-      </div>
+          {this.state.items.map( item=>
+<CryptoItem item = {item}/>
+)}
+       </div>
     );
   }
 }
-
 export default App;
