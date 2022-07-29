@@ -4,7 +4,7 @@
     margin-bottom: 50px;
     width: 300px;
     height: 600px;
-
+    
     box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.4);
     border-radius: 10px;
     transition: 0.3s;
@@ -16,7 +16,26 @@ transform: translate(0px ,10px) ;
 .film_card_poster{
     width: 100%;
     box-sizing: border-box;
+    border-radius:10px;
+}
+.button_page_wrap{
+    text-align: center;
     
+}
+.page_right{
+    margin-right: 50px;
+}
+.page_left{
+    margin-right: 5px;
+}
+.page_left, .page_right{
+    background-color:transparent;
+    outline: none;
+    border: none;
+    font-size: 28px;
+}
+.page_number{
+    font-size: 30px;
 }
 .container{
     width: 1440px;
