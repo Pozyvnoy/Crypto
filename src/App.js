@@ -10,28 +10,23 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {  
-      items:[]
+      films:[]
  };
   }
 
 componentDidMount(){
-  let url = "/api/?get=rates&pairs=USDRUB,EURGBP,GBPRUB,EURJPY,EURRUB&key=bbd1ebae971bc122315c8ba93362750f"
-  const params = {
+  fetch('https://kinopoiskapiunofficial.tech/api/v2.2/films/top?type=TOP_100_POPULAR_FILMS&page=2', {
     method: 'GET',
     headers: {
-      // "Access-Control-Allow-Origin": "*",
-      // "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept",
-    
-    }
-  };
-  fetch(url, params)
-    .then(response => response.json())
-    .then(
-      result =>{
-        this.setState({items:Object.entries(result.data)})
+        'X-API-KEY': '0476947e-fcb5-4e3d-b459-129a114aaa1c',
+        'Content-Type': 'application/json',
+    },
+})
+    .then(res => res.json())
+    .then(json => this.setState({films:json.films}))
 
-      })
-
+ 
+ 
 }
 
        
@@ -41,9 +36,12 @@ componentDidMount(){
     return (
       <div className="myNodeFirstApp">
           <Nav/>
-          {this.state.items.map( item=>
-<CryptoItem item = {item}/>
+      <div className="container">
+      {this.state.films.map(film=>
+<CryptoItem key={film.filmId} film = {film}/>
 )}
+      </div>
+          
        </div>
     );
   }

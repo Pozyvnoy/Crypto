@@ -14,17 +14,18 @@ nav{
     width: 10%;
     object-fit: contain;
 }
-.nav_list{
-    display: flex;
-    flex-direction: row;
+.nav_search{
+    outline: none;
+    border: 1px solid black;
+    height: 30px;
+margin-right: 10px;
+width: 200px;   
+padding-left: 10px;
+font-family: 'Poppins';
+margin-top: 10px;
 }
-.nav_item{
-    
-    padding-top: 35px;
-    list-style: none;
-    font-size: 23px;
-    margin-right: 50px;
-    font-weight: 600;
+.nav_lupa{
+
 }
 #last_nav_item{
     padding-right: 10px;

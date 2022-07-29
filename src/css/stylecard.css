@@ -10,10 +10,14 @@
     transition: 0.3s;
 }
 .item_card_wrapper:hover{
-    margin-top: 10px;
+transform: translate(0px ,10px) ;
 
 }
-
+.film_card_poster{
+    width: 100%;
+    box-sizing: border-box;
+    
+}
 .container{
     width: 1440px;
     margin: 0 auto;
