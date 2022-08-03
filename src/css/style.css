@@ -1,8 +1,15 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins';
+    font-family: 'Inter', sans-serif;
+
 }
+
 .container{
     width: 1440px;
+    
+}
+.myNodeFirstApp{
+    background-color: rgb(18, 17, 17);
+    
 }

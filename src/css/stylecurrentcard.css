@@ -1,0 +1,61 @@
+.current_wrapper{
+   
+    height: 1000px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.film_left_wrapper{
+    width: 50%;
+    height: 600px;
+    
+    display: flex;
+    flex-direction: column;
+}
+.film_name_ru{
+    font-weight: 700;
+    color: white;
+    font-size: 32px;
+    text-align: center;
+}
+.film_name_eng{
+    font-weight: 700;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+.current_poster{
+    width: 300px;
+    height: 450px;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 30px    ;
+}
+.film_right_wrapper{
+    width: 50%;
+    height: 600px;
+}
+.film_description{
+    font-weight: 600;
+    font-size: 21px;
+    color: white;
+}
+.film_trailer_button{
+    width: 250px;
+    margin: 0 auto;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: white;
+    background-color: rgb(29, 216, 29);
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+.film_trailer_button:hover{
+    transform: scale(1.1);
+    font-size: 17px;
+}
