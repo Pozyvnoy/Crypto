@@ -11,8 +11,11 @@ class CryptoItem extends React.Component {
 
             <div className="wrapperItem">
                 <div className="item_card_wrapper">
+                    <div className="header_card_wrapper">
 
-                    <div className="card_over_black"></div>
+                    <div className="card_over_black">
+
+                    </div>
                     <div className="rating_wrapper">
 
                     </div>
@@ -20,7 +23,11 @@ class CryptoItem extends React.Component {
                         {this.props.film.rating}
                     </div>
                     <img src={this.props.film.posterUrl} alt="" className="film_card_poster" />
-                    
+                        <button className="check_more">
+                            Подробнее
+                        </button>
+                    </div>
+
                     <div className="item_card_info">
 
                         <div className="item_card_name">

@@ -1,30 +1,52 @@
 .item_card_wrapper{
-    background-color:white;
+    
+    background-color:rgb(18, 17, 17);
     margin-bottom: 50px;
     width: 300px;
-    height: 700px;
-    box-shadow: 10px 10px 18px 0px rgba(230, 230, 233, 0.4);
+    height: 600px;
     border-radius: 10px;
     transition: 0.3s;
-    
+    position: relative;
+}
+.check_more{
+    background-color: transparent ;
+    border: 3px solid #e88428;
+    font-weight: 600;
+    font-size: 18px;
+    outline: none;
+    opacity: 0%;
+    top: 200px;
+    right: 75px;
+    color: white;
+}
+.item_card_wrapper:hover .check_more{
+position: absolute;
+    opacity: 100%;
+    width: 150px;
+    height: 30px;
 
 }
-
 .item_card_wrapper:hover{
 transform: translate(0px ,10px);
-
+ 
+}
+.item_card_wrapper:hover .film_card_poster{
+    filter: brightness(50%);
+    
+    box-shadow: 10px 10px 18px 0px rgba(230, 230, 233, 0.4);
 }
 .film_card_poster{
     width: 100%;
-    filter: brightness(70%);
+    filter: brightness(100%);
     box-sizing: border-box;
     border-radius:10px;
-    position: relative;
     margin-bottom: 10px;
-    transition: 0.5s;
+    transition: 0.2s;
 }
-.film_card_poster:hover{
-    filter: brightness(100%);
+
+
+.item_card_wrapper:hover  .item_card_rating {
+    border: 3px solid #3f8106;
 }
 .button_page_wrap{
     text-align: center;
@@ -60,7 +82,7 @@ transform: translate(0px ,10px);
     width: 1440px;
     margin: 0 auto;
     display: flex;
-    
+    border-bottom: 3px solid #e88428;
     flex-direction: row;
     justify-content: center;
     flex-flow: row wrap;
@@ -69,19 +91,22 @@ transform: translate(0px ,10px);
 
 
 .item_card_info{
-font-size: 23px;
-font-family: 'Inter';
-font-weight: 400;
-font-style: italic;
-} 
-.item_card_year{
-text-align: center;
-    font-style: normal;
-font-weight: 700;
-font-size: 23px;
-margin-bottom: 20px;
-font-family: 'Inter';
-}
+    
+    font-size: 23px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-style: italic;
+    color:white;
+    } 
+    .item_card_year{
+    text-align: center;
+        font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    margin-bottom: 20px;
+    font-family: 'Inter';
+    color:white;
+    }
 .item_card_rating{
     position: absolute;
     color: white;
@@ -96,11 +121,16 @@ font-family: 'Inter';
     margin-left: 10px;
     z-index: 999;
     margin-top: 10px;
+    transition: 0.3s
+}
+.item_card_rating:hover{
+    border: 3px solid #3f8106;
 }
 .item_card_logo{
     margin-bottom: 60px;
 }
 .item_card_name{
+
     font-family: 'Inter';
 font-weight: 600;
 font-size: 28px;
