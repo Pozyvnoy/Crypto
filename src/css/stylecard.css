@@ -6,26 +6,29 @@
     height: 600px;
     border-radius: 10px;
     transition: 0.3s;
-    position: relative;
+   
 }
 .check_more{
+    
     background-color: transparent ;
     border: 3px solid #e88428;
     font-weight: 600;
     font-size: 18px;
     outline: none;
     opacity: 0%;
-    top: 200px;
-    right: 75px;
+    margin-left: 75px;
+    transform: translateY(-250px);
     color: white;
 }
 .item_card_wrapper:hover .check_more{
-position: absolute;
+    
+    
     opacity: 100%;
     width: 150px;
-    height: 30px;
+    height: 35px;
 
 }
+
 .item_card_wrapper:hover{
 transform: translate(0px ,10px);
  
@@ -102,7 +105,7 @@ transform: translate(0px ,10px);
     text-align: center;
         font-style: normal;
     font-weight: 700;
-    font-size: 23px;
+    font-size: 15px;
     margin-bottom: 20px;
     font-family: 'Inter';
     color:white;
@@ -119,7 +122,7 @@ transform: translate(0px ,10px);
     border-radius: 50%;
     height: 35px;
     margin-left: 10px;
-    z-index: 999;
+    z-index: 99;
     margin-top: 10px;
     transition: 0.3s
 }
