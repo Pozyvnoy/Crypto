@@ -23,13 +23,16 @@ class Nav extends React.Component {
                         </li>
 
                     </ul>
+                    <div className="nav_wrapper_all">
+                    <input className="nav_search" type="search" placeholder="Введите название " />
+                    
                     <div className="wrapper_lupa">
+                        
                         <i className="fa-solid fa-magnifying-glass nav_lupa"></i>
                     </div>
-
-
-                    {/* <input className="nav_search" type="search" /> */}
-
+                    </div>
+                   
+                    
                 </nav>
             </div>
         );

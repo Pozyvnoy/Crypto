@@ -1,8 +1,16 @@
 .current_wrapper{
    
-    height: 1000px;
+    height: 100vh;
     display: flex;
-    justify-content: space-between;
+   justify-content: space-between;
+}
+.film_right_wrapper{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-weight: 600;
+    font-size: 19px;
+    text-align: center;
 }
 
 .film_left_wrapper{
@@ -17,6 +25,7 @@
     color: white;
     font-size: 32px;
     text-align: center;
+    margin-bottom: 10px;
 }
 .film_name_eng{
     font-weight: 700;
@@ -35,6 +44,7 @@
 .film_right_wrapper{
     width: 50%;
     height: 600px;
+    margin-right: 20px;
 }
 .film_description{
     font-weight: 600;
@@ -54,6 +64,9 @@
     outline: none;
     border-radius: 20px;
     transition: 0.3s;
+}
+.film_length{
+    margin-bottom: 30px;
 }
 .film_trailer_button:hover{
     transform: scale(1.1);
