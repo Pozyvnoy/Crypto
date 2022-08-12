@@ -1,0 +1,35 @@
+.similar_wrapper{
+    width: 200px;
+    height: 400px;
+    background-color:rgb(18, 17, 17);
+    border-radius: 10px;
+    padding-left: 100px;
+    padding-top: 50px;
+  
+
+}
+.similar_link{
+    text-decoration: none;
+    
+}
+.swiper{
+    border: 3px solid white;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    justify-content: space-between;
+
+}
+.similar_poster{
+    height: 300px;
+    width: 100%;
+    box-sizing: border-box;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.similar_name{
+   
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}

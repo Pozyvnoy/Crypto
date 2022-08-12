@@ -1,5 +1,4 @@
 import React from 'react';
-
 import "../css/stylecard.css"
 import "../css/style.css"
 import { Link } from 'react-router-dom';
@@ -34,9 +33,12 @@ class FilmItem extends React.Component {
                         </div>
                        
                         <img src={this.props.film.posterUrl} alt="" className="film_card_poster" />
-                        <Link to={`${this.props.film.filmId}`}  className="check_more">
-                            <i className="fa-solid fa-angle-right"></i>  Подробнее
+                        <div className="check_more">
+                            <Link to={`${this.props.film.filmId}`}  className="check_more_link">
+                        <i className="fa-solid fa-angle-right more_arrow" ></i>  Подробнее
                         </Link>
+                        </div>
+                        
                     </div>
 
                     <div className="item_card_info">

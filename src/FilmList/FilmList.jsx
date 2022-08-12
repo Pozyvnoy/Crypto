@@ -36,7 +36,7 @@ class FilmList extends React.Component {
         fetch(`https://kinopoiskapiunofficial.tech/api/v2.2/films/top?type=TOP_100_POPULAR_FILMS&page=${page}`, {
             method: 'GET',
             headers: {
-                'X-API-KEY': '0476947e-fcb5-4e3d-b459-129a114aaa1c',
+                'X-API-KEY': '22573046-e93d-4b7d-b7a0-e1c7828424e2',
                 'Content-Type': 'application/json',
             },
         })
@@ -54,7 +54,6 @@ class FilmList extends React.Component {
         return (
             <section className="film_list">
                 <Nav />
-
                 <div className="container">
                     {this.state.films.map(film =>
                         <FilmItem key={film.filmId} film={film} />

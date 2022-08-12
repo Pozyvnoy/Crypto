@@ -5,6 +5,7 @@
    justify-content: space-between;
 }
 .film_right_wrapper{
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     color: white;
@@ -12,22 +13,49 @@
     font-size: 19px;
     text-align: center;
 }
-
+.sim_swiper{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.film_trailer_button{
+    padding: 8px;
+    background-color: #fff;
+    border: 2px solid #e88428;
+    width: 250px;
+    text-transform: uppercase;
+    border-radius: 40px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    transition: 0.4s;
+    margin-left: auto;
+    margin-right: auto;
+}
+.film_trailer_button:hover{
+    background-color: #e88428;
+    color: white;
+    border-color: black;
+}
 .film_left_wrapper{
     width: 50%;
     height: 600px;
-    
     display: flex;
     flex-direction: column;
 }
 .film_name_ru{
+    margin-top: 20px;
+    font-style: italic;
     font-weight: 700;
     color: white;
     font-size: 32px;
     text-align: center;
     margin-bottom: 10px;
 }
+.film_name_orig{
+    margin-bottom: 20px;
+}
 .film_name_eng{
+    margin-bottom: 20px;
     font-weight: 700;
     color: white;
     font-size: 30px;
@@ -39,7 +67,14 @@
     border-radius: 10px;
     margin: 0 auto;
     margin-bottom: 30px;
-    margin-top: 30px    ;
+    margin-top: 20px    ;
+}
+.film_rating{
+    text-align: center;
+    font-weight: 700;
+    color: white;
+    font-size: 19px;
+    margin-bottom: 50px;
 }
 .film_right_wrapper{
     width: 50%;
@@ -51,24 +86,20 @@
     font-size: 21px;
     color: white;
 }
-.film_trailer_button{
-    width: 250px;
-    margin: 0 auto;
-    font-weight: 600;
-    text-transform: uppercase;
-    font-size: 15px;
+.film_length{
     color: white;
-    background-color: rgb(29, 216, 29);
-    height: 40px;
-    border: none;
-    outline: none;
-    border-radius: 20px;
-    transition: 0.3s;
+    font-weight: 600;
+    font-size: 19px;
+    text-align: center;
 }
+.film_year{
+    margin-bottom: 20px;
+    color: white;
+    font-weight: 600;
+    font-size: 19px;
+    text-align: center;
+}
+
 .film_length{
     margin-bottom: 30px;
-}
-.film_trailer_button:hover{
-    transform: scale(1.1);
-    font-size: 17px;
 }

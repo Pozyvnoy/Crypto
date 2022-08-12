@@ -1,0 +1,37 @@
+.current_trailer{
+    transition: 0.4s;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    border:none;
+    background-color: rgba(0,0,0,0.9);
+    z-index: 9999;
+}
+
+.trailer_wrapper{
+    
+    border:none;
+    transition: 0.4s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.cross_mark{
+    transition: 0.3s;
+  text-shadow:0 0 10px  orange; 
+}
+.cross_mark:hover{
+    transform: scale(1.2);
+}
+.trailer_cross{
+    position: absolute;
+    margin-right: 160px;
+    right: 0;
+    margin-top: 100px;
+    font-size: 30px;
+    color: white;
+    z-index: 99999;
+}

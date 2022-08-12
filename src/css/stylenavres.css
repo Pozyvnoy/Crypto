@@ -1,0 +1,23 @@
+.search_icon{
+    padding-right: 5px;
+}
+.search_item_name{
+    margin-bottom: 10px;
+}
+.search_link{
+    border-bottom: 3px solid #e88428 ;
+    display: flex;
+    transition: 0.4s;
+    justify-content: space-between;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 10px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 600;
+    padding-top: 10px;
+}
+.search_link:last-child{
+    border-bottom: none;
+}
